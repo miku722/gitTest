@@ -16,7 +16,7 @@ public class HelloResource {
 
     public String hello() {
         for (int i = 0; i < 100; i++) {
-            System.out.println("i love you" + i);
+            System.out.println("i love" + i);
         }
         return "Hello, World!";
     }
