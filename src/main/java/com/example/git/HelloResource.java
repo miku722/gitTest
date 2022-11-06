@@ -6,12 +6,17 @@ import javax.ws.rs.Produces;
 
 @Path("/hello-world")
 public class HelloResource {
+    public static void main(String[] args) {
+        HelloResource resource = new HelloResource();
+        resource.hello();
+    }
+
     @GET
     @Produces("text/plain")
 
     public String hello() {
-        for (int i = 0; i < 100; i++){
-            System.out.println("i love you %s" +i);
+        for (int i = 0; i < 100; i++) {
+            System.out.println("i love you" + i);
         }
         return "Hello, World!";
     }
