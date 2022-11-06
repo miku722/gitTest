@@ -8,7 +8,11 @@ import javax.ws.rs.Produces;
 public class HelloResource {
     @GET
     @Produces("text/plain")
+
     public String hello() {
+        for (int i = 0; i < 100; i++){
+            System.out.println("i love you %s" +i);
+        }
         return "Hello, World!";
     }
 }
